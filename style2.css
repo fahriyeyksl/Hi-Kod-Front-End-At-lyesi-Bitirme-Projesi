@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Pro", sans-serif;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* Navbar brand logo boyutu */
+.navbar-brand img {
+  width: 100px; /* Logonun genişliğini buradan ayarlayabilirsiniz */
+  height: auto; /* Logonun yüksekliğini buradan ayarlayabilirsiniz */
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+#video-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-video {
+  height: 80%; /* Video yüksekliği */
+  width: 100%; /* Video genişliği */
+  z-index: 10; /* Diğer öğelerin üzerinde olması için */
+  object-fit: cover; /* Video boyutunu korumak için */
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: none !important;
+  color:rgba(162, 76, 30, 0.551) !important;
+}
+.nav-item a{
+font-size: 17px;
+}
+
+#hero .video-write-content {
+  margin-left: 3%;
+  margin-top: 3%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: start;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#hero .video-navbar-container {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.video-write-container-text{
+  margin-top: 23%;
+}
+
+#hero .video-write-content h1{
+  color: #fff;
+
+}
+
+
+nav {
+  font-size: 22px;
+}
+.navB {
+  width: 10%;
+}
+.nv {
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .dropdown-content {
+    position: static;
+  }
+  .dropbtn {
+    margin-left: -10px;
+  }
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.hr_{
+  color:#fff ;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+.text-style{
+color: #fff;
+text-align: 30px;
+margin-left: 10%;
+margin-right: 10%;
+
+  
+}
+.text-style p{
+  font-size:20px;
+}
+.text-style h1{
+  text-align: center;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.card-container-2 {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.rotated-image {
+position: absolute;
+top: 0;
+left: 0;
+transform: rotate(60deg);
+}
+.logo-container {
+flex: 0 0 auto;
+margin-right: 3px; /* Logodan metin arasındaki boşluk */
+}
+
+.logo {
+max-width: 130px; /* Logo genişliği */
+height: auto;
+opacity: 0.3; /* Başlangıçta görünmez olacak */
+transition: opacity 1s ease-in-out; /* Yavaş yavaş belirginleşme efekti */
+transform: rotate(270deg); 
+}
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Kartların yüksekliğini dikey olarak esnetmek için */
+  margin-top: 20px;
+}
+.card {
+width: calc(50% - 20px);
+padding: 20px;
+box-sizing: border-box;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background-color: rgba(84, 84, 84, 0.551);
+display: flex; /* Kart içeriğini dikey olarak hizalamak için */
+flex-direction: column; /* Kart içeriğini dikey olarak hizalamak için */
+}
+
+.card:nth-child(odd) {
+margin-right: 20px; /* Tek sayıda kart varsa sağa boşluk ver */
+}
+
+.card:nth-child(even) {
+margin-left: 20px; /* Çift sayıda kart varsa sola boşluk ver */
+}
+.card h2 {
+   color: #fff;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.card p {
+color: #fff;
+
+font-size: 20px;
+}
+.card li{
+color: #fff;
+font-size: 20px;
+}
+
+.general-text1 {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 calc(50% - 20px) ; /* 50% - margin */
+  max-width: calc(50% - 20px); /* 50% - margin */
+}
+
+@media (max-width: 1199px) {
+  .card_container {
+      flex-wrap: wrap;
+  }
+  
+  .general-text1 {
+      flex: 1 1 calc(100% - 20px); /* 100% - margin */
+      max-width: calc(100% - 20px); /* 100% - margin */
+      margin-bottom: 20px; /* Kartlar arasındaki boşluk */
+  }
+}
+
+.rotated-image1 {
+position: absolute;
+top: 0;
+left: 0;
+transform: translate(-50%, -50%) rotate(30deg);
+width: 120%; /* Genişliği arttır */
+height: auto; /* Yüksekliği otomatik yap */
+z-index: -1; /* Yazıların üstünde olması için */
+}
+
+/* */
+
+.general-text2 {
+position: relative;
+}
+
+.rotated-image2 {
+position: absolute;
+bottom: 0%;
+left: 50%;
+transform: translateX(-50%);
+width: 100%;
+height: 100%; /* Div'in yarısını kaplayacak şekilde */
+z-index: -1;
+}
+.rotated-image3 {
+position: absolute;
+bottom: 0;
+top: 0;
+right: 10%; /* Sağa yaslamak için */
+transform: translateX(50%);
+width: 100%; /* Div'in yarısını kaplayacak şekilde */
+height: 100%;
+z-index: -1;
+}
+
+.card2-text {
+flex: 1; /* Metin kısmının genişliği esnek olacak */
+}
+
+.card2-text p {
+color: #fff;
+font-size: 20px;
+line-height: 1.6;
+width: 100%; /* Metin genişliği */
+transition: opacity 1s ease-in-out; /* Yavaş yavaş belirginleşme efekti */
+}
+
+.card-container-2:hover .logo,
+.card-container-2:hover .card2-text p {
+opacity: 1; /* Hover durumunda belirginleşme */
+}
+.sideTitle {
+writing-mode: vertical-rl;
+text-align: center;
+margin-right: 1%;
+}
+.rotated {
+transform: rotate(180deg);
+}
+.general-text{
+border-radius: 3px;
+background-color: rgba(84, 84, 84, 0.551);
+padding: 15px;
+}
+.general-text p{
+margin-left: 3%;
+font-size: 20px;
+}
+.general-text li{
+margin-left: 3%;
+font-size: 20px;
+}
+.general-text h3{
+margin-left: 1%;
+font-size: 20px;
+}
+
+.general-info {
+width: 100%; /* İstediğiniz genişlik değeri */
+height: 100%; /* Otomatik yükseklik */
+}
+
+.general-text {
+width: calc(100% - 100px); /* Genel bilgi içeriğinin genişliği, başlık genişliği kadar azaltıldı */
+}
+
+.sideTitle {
+width: 100px; /* Başlık genişliği */
+}
+
+.rotated-image1,
+.rotated-image3 {
+max-width: 120%; /* Resimlerin maksimum genişliği */
+height: auto; /* Otomatik yükseklik */
+}
+
+.card-container1 {
+display: flex;
+margin: 20px auto;
+max-width: 800px; /* Kartın maksimum genişliği */
+}
+
+.card-content {
+flex: 1; /* Sol taraftaki içeriğin esnekliği */
+background-color: #f0f0f0; /* Sol taraftaki arka plan rengi */
+padding: 20px;
+}
+
+.text-content {
+max-width: 400px; /* Yazı içeriğinin maksimum genişliği */
+}
+
+.card-slider {
+flex: 1; /* Sağ taraftaki slider'ın esnekliği */
+padding: 20px;
+background-color: #ccc; /* Sağ taraftaki arka plan rengi */
+}
+
+
+swiper-container {
+width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: auto;
+}
+
+swiper-slide img {
+display: block;
+width: 100%;
+
+}
+.containerbaslık {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%; 
+}
+.card2baslık {
+  max-width: 100%;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 30px 30px 20px 30px;
+}
+
+.footer__section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 18px;  
+  margin-bottom: 10px;
+}
+.footer__title1 {
+  font-size: 18px;  
+  margin-bottom: 10px;
+   margin-right: 80px;
+}
+
+.footer__section p {
+  font-size: 14px;
+}
+
+.footer__section:not(:last-child) {
+  margin-right: 20px;
+}
+.nav__title {
+  font-weight: 400;
+  font-size: 20px;
+}
+.nav__ul a {
+  color: #999;
+ margin-right: 30px;
+
+}
+.hr_css{
+  color:#fff ;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+ 
+.nav__item--extra {
+  flex-grow: 2;
+}
+.nav__ul {
+  display: flex; /* Sosyal medya ikonlarını yatayda hizalamak için flex kullanıyoruz */
+  list-style: none; /* Liste öğelerinin işaretlerini kaldırıyoruz */
+  padding: 0; /* Liste içi boşluğu kaldırıyoruz */
+}
+
+.nav__ul li {
+  margin-right: 20px; /* İkonlar arasında bir boşluk bırakıyoruz */
+}
+
+
+.nav__ul li a i {
+  font-size: 24px; /* İkon boyutunu 24 piksel olarak ayarlıyoruz */
+}

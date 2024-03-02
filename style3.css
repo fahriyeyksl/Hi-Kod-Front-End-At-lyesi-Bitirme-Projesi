@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Pro", sans-serif;
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.navbar-brand img {
+  width: 100px; /* Logonun genişliğini buradan ayarlayabilirsiniz */
+  height: auto; /* Logonun yüksekliğini buradan ayarlayabilirsiniz */
+}
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#video-content {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    padding: 20px;
+    color: white;
+}
+
+  .hero-video {
+    height: 80%; /* Video yüksekliği */
+    width: 100%; /* Video genişliği */
+    z-index: 10; /* Diğer öğelerin üzerinde olması için */
+    object-fit: cover; /* Video boyutunu korumak için */
+  }
+  .navbar-nav .nav-link:hover {
+    color: rgba(162, 76, 30, 0.551) !important; /* Linkin rengini değiştir */
+    text-decoration: none !important; /* Alt çizgiyi kaldır */
+}
+
+.nav-item a{
+  font-size: 17px;
+}
+  
+
+  #hero .video-navbar-container {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  nav {
+    font-size: 22px;
+  }
+  .navB {
+    width: 10%;
+  }
+  .nv {
+    margin-left: 7%;
+    margin-right: 10%;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+ 
+  /* Dropdown button */
+  .dropbtn {
+    color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 6px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  @media (max-width: 991px) {
+    .dropdown-content {
+      position: static;
+    }
+    .dropbtn {
+      margin-left: -10px;
+    }
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }  
+hr{
+    color:#fff ;
+    margin-left: 2%;
+    margin-right: 2%;
+
+  }
+  .hr_css{
+    color:#fff ;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+.text-style{
+    color: #fff;
+    text-align: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+ 
+    
+}
+.text-style p{
+    font-size:20px;
+}
+.text-style h2{
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+h2{
+  text-align: center;
+}
+h1{
+  color: #fff;
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Kartları eşit aralıklarla böl */
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.card {
+  width: calc(30% - 20px); /* Kartların genişliğini yüzdeye göre ayarla */
+  margin-bottom: 20px; /* Kartlar arasında boşluk bırak */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(84, 84, 84, 0.551) !important; /* Öncelikli olarak background rengini değiştir */
+  height: auto; /* Kartların yüksekliğini otomatik yap */
+}
+
+
+@media (max-width: 1000px) {
+  .card {
+    width: 90%;
+  }
+}
+  
+  .card h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .card p {
+    font-size:20px;
+    color: #fff;
+  }
+  .card-container-2 {
+    display: flex;
+    flex-direction: row; /* Resim ve metni yan yana sıralamak için */
+    align-items: flex-start; /* İçeriklerin üstte hizalanması için */
+}
+
+.card2 {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Resim ile metin arasına boşluk ekler */
+}
+
+.card2 img {
+    max-width: 100%; /* Resmin konteynere sığacak şekilde ayarlanması */
+    height: auto;
+}
+
+.card2-text {
+    flex: 1 1 auto;
+}
+
+/* Media etiketi */
+@media (max-width: 1250px) {
+  .card-container-2 {
+      flex-direction: column; /* Ekran küçüldüğünde sütun haline getir */
+  }
+
+  .card2 {
+      margin-right: 0; /* Kartlar arasındaki boşluğu kaldır */
+      margin-bottom: 20px; /* Kartlar arasına alt alta yerleştirme için boşluk ekler */
+  }
+}
+
+/* Media etiketi */
+@media (max-width: 1100px) {
+    .card-container-2 {
+        flex-direction: column; /* Ekran küçüldüğünde sütun haline getir */
+    }
+
+    .card2 {
+        margin-right: 0; /* Kartlar arasındaki boşluğu kaldır */
+        margin-bottom: 20px; /* Kartlar arasına alt alta yerleştirme için boşluk ekler */
+    }
+}
+  .containerbaslık {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%; 
+  }
+  .card2baslık {
+    max-width: 100%;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  }
+  @media (max-width: 768px) {
+    .card-container-2 {
+      flex-direction: column; /* Sayfa küçüldüğünde dikey olarak sırala */
+    }
+  
+    .card2 {
+      margin-right: 0; /* Sayfa küçüldüğünde boşlukları kaldır */
+      margin-bottom: 20px; /* Metin ile alttaki içerik arasına boşluk ekler */
+    }
+  }
+  .card-container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card3 {
+    flex: 1 1 calc(100% - 20px); /* %100 - margin */
+    padding: 20px;
+    background-color: rgba(84, 84, 84, 0.551);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(100% - 20px); /* %100 - margin */
+}
+
+@media (min-width: 1200px) {
+    .card3 {
+        flex: 1 1 calc(25% - 20px) !important; /* 25% - margin */
+        max-width: calc(25% - 20px) !important; /* 25% - margin */
+    }
+}
+
+@media (max-width: 1199px) {
+    .card3 {
+        flex: 1 1 calc(50% - 20px) !important; 
+        max-width: calc(50% - 20px) !important; 
+    }
+}
+
+@media (max-width: 767px) {
+    .card3 {
+      flex: 1 1 calc(100% - 20px) !important; /* 100% - margin */
+      max-width: calc(100% - 20px) !important; /* 100% - margin */
+    }
+}
+
+
+  .card-container-video {
+    display: flex;
+    justify-content: flex-end; /* Başlangıçta videonun sağda olmasını sağlar */
+    align-items: center;
+    flex-wrap: wrap-reverse; /* İçeriği alt satıra geçmesi için */
+  }
+  
+  .card-video {
+    flex: 1 1 50%; /* İki elemanı yatayda eşit böler */
+    order: 2; /* Sıralamayı değiştirerek videonun sağda olmasını sağlar */
+  }
+  
+  .card-video video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-video-text {
+    flex: 1 1 50%; /* İki elemanı yatayda eşit böler */
+    padding: 20px; /* İçerikten kenarlara boşluk ekler */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container-video {
+      flex-direction: column; /* Ekran küçüldüğünde dikey düzene geçiş */
+      justify-content: center; /* Dikey düzende içeriği ortalamak için */
+      align-items: flex-start; /* Dikey düzende içerikleri sola hizalar */
+    }
+  
+    .card-video,
+    .card-video-text {
+      flex: 1 1 100%; /* Dikey düzende elemanların genişliğini tamamen kaplar */
+    }
+  }
+
+
+li{
+    font-size: 20px;
+    color: #fff;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 30px 20px 30px;
+    color: #ffffff;
+    
+}
+
+
+.nav__item{
+    margin-left: 10%;
+}
+.nav__ul a {
+  color: #999;
+}
+.nav__ul {
+  display: flex; /* Sosyal medya ikonlarını yatayda hizalamak için flex kullanıyoruz */
+  list-style: none; /* Liste öğelerinin işaretlerini kaldırıyoruz */
+  padding: 0; /* Liste içi boşluğu kaldırıyoruz */
+  
+}
+
+.nav__ul li {
+  margin-right: 20px; /* İkonlar arasında bir boşluk bırakıyoruz */
+  margin-left: 30px;
+}
+.nav__ul li a i {
+  font-size: 24px; /* İkon boyutunu 24 piksel olarak ayarlıyoruz */
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer__section p {
+  font-size: 14px;
+}
+
+.footer__section:not(:last-child) {
+  margin-right: 20px;
+}

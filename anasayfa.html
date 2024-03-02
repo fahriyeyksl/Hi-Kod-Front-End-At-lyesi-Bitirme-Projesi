@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uzayda Türk İzleri</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/df1dea96da.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="body-anasayfa">
+    <div id="hero">
+      <video id="hero-video" class="hero-video" autoplay loop muted poster>
+        <source src="asset/anasayfa2.mp4" type="video/mp4" />
+      </video>
+      <!--Navbar-->
+      <div class="video-navbar-container">
+        <nav class="navbar navbar-expand-lg text-uppercase p-3 nv">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="anasayfa.html">
+              <img src="asset/logo.png" alt="Logo" width="250" height="250" />
+            </a>
+            <h2 style="color: #fff">UZAYDA TÜRK İZLERİ</h2>
+            <button
+              class="navbar-toggler text-light"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive"
+              aria-controls="navbarRespons  ive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              MENU
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link py-3 px-0 px-lg-3 text-light"
+                    id="link1"
+                    onclick="videoDegistir('asset/anasayfa_video.mp4')"
+                    >TÜRKİYE'NİN UZAY YOLCULUĞU</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link py-3 px-0 px-lg-3 text-light"
+                    href="#"
+                    id="link2"
+                    onclick="videoDegistir('asset/projeler-video.mp4')"
+                    >Projeler</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link py-3 px-0 px-lg-3 text-light"
+                    href="#"
+                    id="link3"
+                    onclick="videoDegistir('asset/4_astronot.mp4')"
+                    >Alper Gezeravcı</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="contactForm" class="form-container">
+      <form action="#" id="myForm" method="post">
+        <h2>İletişim Formu</h2>
+        <input type="text" id="name" placeholder="Adınız" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="E-posta Adresiniz"
+          required
+        />
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Mesajınız"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Gönder</button>
+        <button type="button" id="closeForm">Kapat</button>
+      </form>
+    </div>
+    <div class="icerik-container" id="icerikContainer1">
+      <h2>Türkiye'nin Uzay Yolculuğu</h2>
+      <p style="color: #fff">
+        Türkiye'nin uzay programı, 1993 yılında geliştirmeye başlamış olup, 2018
+        yılında Türkiye Uzay Ajansı 23 Sayılı Cumhurbaşkanlığı Kararnamesi ile
+        Uzay ve havacılık bilimi ve teknolojilerine yönelik orta ve uzun vadeli
+        amaçları, temel ilke ve yaklaşımları, hedef ve öncelikleri, performans
+        ölçütlerini, bunlara ulaşmak için izlenecek yöntemler ile kaynak
+        dağılımlarını belirlemek ve gereken uygulamaları yapmak için
+        kurulmuştur.
+      </p>
+      <a href="türkiyeninuzayyolculugu.html" class="transparent-button"
+        >DAHA FAZLA BİLGİ</a
+      >
+    </div>
+    <div class="icerik-container" id="icerikContainer2">
+      <h2>Uzay Teknolojileri</h2>
+      <p>
+        Türkiye'nin uzay çalışmaları, özellikle yapay uydu teknolojilerine
+        odaklanmıştır. TÜRKSAT serisi uydu projeleri ve GÖKTÜRK 2 gibi
+        girişimler, ülkenin iletişim ve gözlem ihtiyaçlarını karşılamak için
+        başarıyla gerçekleştirilmiştir.
+      </p>
+      <a href="projeler.html" class="transparent-button">DAHA FAZLA BİLGİ</a>
+    </div>
+    <div class="icerik-container" id="icerikContainer3">
+      <h2>İlk Türk Astronot Alper Gezeravcı</h2>
+      <p>
+        Alper Gezeravcı, Türkiye'nin ilk astronotudur. 1979'da Mersin'in Silifke
+        ilçesinde doğmuştur. Elektronik Mühendisliği eğitimi aldıktan sonra Türk
+        Hava Kuvvetleri'nde savaş pilotu olarak görev yapmış ve ayrıca Türk Hava
+        Yolları'nda kaptan pilot olarak çalışmıştır. Gezeravcı, Axiom-3 (Ax-3)
+        ekibiyle birlikte Uluslararası Uzay İstasyonu'na 14 günlük bir misyon
+        için gitmiş ve burada 13 bilimsel deneye imza atmıştır. 9 Şubat'ta
+        başarıyla Dünya'ya dönmüştür.
+      </p>
+      <a href="alpergezeravcı.html" class="transparent-button"
+        >DAHA FAZLA BİLGİ</a
+      >
+    </div>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="twitter.com" target="_blank"
+          ><i class="bi bi-twitter fa-2x p-2"></i
+        ></a>
+        <a href="instagram.com" target="_blank"
+          ><i class="bi bi-instagram fa-2x p-2"></i
+        ></a>
+        <a href="facebook.com" target="_blank"
+          ><i class="bi bi-facebook fa-2x p-2"></i
+        ></a>
+        <a href="#" id="openForm"
+          ><i class="fa-solid fa-2x p-2 fa-comment"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia Pro", sans-serif;
+}
+
+html,body{
+  overflow:hidden; 
+}
+p {
+  color: #d8e3fd;
+  font-size: 20px;
+}
+#hero {
+  background-color: #15203b;
+  height: 100vh;
+}
+.hero-video {
+  height: 100%; /* Video yüksekliği */
+  width: 100%; /* Video genişliği */
+  z-index: 10; /* Diğer öğelerin üzerinde olması için */
+  object-fit: cover; /* Video boyutunu korumak için */
+ 
+}
+
+#hero .video-write-content {
+  margin-left: 3%;
+  margin-top: 3%;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: start;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+#hero .video-navbar-container {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#hero .video-write-content h1{
+  color: #fff;
+
+}
+
+nav {
+  font-size: 22px;
+}
+
+.navB {
+  width: 10%;
+}
+.nv {
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-top: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .dropdown-content {
+    position: static;
+  }
+  .dropbtn {
+    margin-left: -10px;
+  }
+}
+
+.container_hover {
+  position: relative;
+  overflow: hidden; /* Arka plan renginin butonun üzerine yayılmasını engeller */
+}
+
+.container_hover:hover {
+  background-color: #0f1b36;
+  opacity: 0.5;
+}
+
+
+.container_hover:hover .btn {
+  opacity: 1;
+}
+
+
+/* Navbar linklerinin rengi */
+.navbar-nav .nav-link {
+  color: white; /* Linklerin metin rengini buradan ayarlayabilirsiniz */
+}
+
+/* Navbar linklerinin hover rengi */
+.navbar-nav .nav-link:hover {
+  text-decoration: none !important;
+  color:rgba(162, 76, 30, 0.551) !important;
+}
+/* Navbar toggler icon rengi */
+.navbar-toggler-icon {
+  background-color: #343a40; /* Toggler ikonunun rengini buradan ayarlayabilirsiniz */
+}
+
+/* Navbar brand logo boyutu */
+.navbar-brand img {
+  width: 100px; /* Logonun genişliğini buradan ayarlayabilirsiniz */
+  height: auto; /* Logonun yüksekliğini buradan ayarlayabilirsiniz */
+}
+
+
+/* Form container */
+.form-container {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%; /* Sayfanın sağ tarafını kaplayacak genişlik */
+  height: 60vh; /* Sayfanın tam yüksekliği kadar olacak */
+  padding: 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); /* Hafif bir gölgelendirme */
+  z-index: 999; /* Diğer öğelerin üzerinde olması için */
+  overflow-y: auto; /* İçerik fazla ise kaydırma çubuğu görünsün */
+}
+
+.form-container h2 {
+margin-bottom: 10px;
+color: #fff;
+text-align: center;
+}
+
+.form-container label {
+display: block;
+margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+width: calc(100% - 16px); /* Kenar boşlukları göz ardı ederek genişlik hesaplaması */
+padding: 8px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.form-container textarea {
+resize: none;
+}
+
+.form-container button {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+background-color:rgba(84, 84, 84, 0.551); /* Buton rengini mavi yap */
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.form-container button:hover {
+background-color: rgba(30, 30, 30, 0.551); /* Hover etkisi için buton rengini koyu mavi yap */
+}
+.footer {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: flex-end; /* Logoları sağ tarafa hizala */
+
+}
+
+.footer .social-icons {
+display: flex;
+align-items: center;
+}
+
+.footer .social-icons i{
+width: 200px; /* Logoları büyüt */
+margin-left: 30px; /* Logolar arasında boşluk bırak */
+color: rgba(255, 253, 253, 0.551);
+}
+
+.footer .social-icons i:hover{
+  color: rgb(126, 126, 126);
+}
+.footer button {
+padding: 10px 20px;
+background-color: rgba(84, 84, 84, 0.551) !important;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.footer button:hover {
+background-color: rgba(31, 31, 31, 0.551) !important;
+}
+.icerik-container {
+  display: none; /* Başlangıçta gizli */
+  position: fixed;
+  top: 50%; /* Sayfanın dikey merkezine yerleştir */
+  left: 50%; /* Sayfanın yatay merkezine yerleştir */
+  transform: translate(-50%, -50%); /* Ortalamak için */
+  padding: 20px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2); /* Hafif bir gölgelendirme */
+  z-index: 999; /* Diğer öğelerin üzerinde olması için */
+  text-align: center; /* İçerikleri ortalamak için */
+  width: 60%; /* Genel genişlik */
+  font-size: 18px; /* Genel font boyutu */
+}
+
+@media (max-width: 990px) {
+  .icerik-container {
+      width: 95% !important; /* Küçük ekranlarda formun genişliği */   
+       margin-top: 10% !important;
+    }
+      .icerik-container h2 {
+        font-size: 18px;
+      }
+      .icerik-container p {
+        font-size: 16px;
+     }
+     .nav-item a {
+      font-size: 18px;
+     }
+     .container-fluid h2{
+      font-size: 18px;
+     }
+
+}
+
+@media (max-width: 768px) {
+  .icerik-container {
+      width: 90% !important; /* Küçük ekranlarda formun genişliği */  
+  }
+  .icerik-container h2 {
+    font-size: 16px;
+  }
+  .icerik-container p {
+    font-size: 14px;
+ }
+ .nav-item a {
+  font-size: 16px;
+ }
+ .container-fluid h2{
+  font-size: 16px;
+ }
+}
+
+@media (max-width: 880px) {
+  .icerik-container {
+      width: 80% !important; /* Daha küçük ekranlarda formun genişliği */
+      margin-top: 10% !important;
+  }
+  .icerik-container h2 {
+    font-size: 18px;
+  }
+  .icerik-container p {
+    font-size: 16px;
+ }
+}
+
+@media (max-width: 640px) {
+  .icerik-container {
+      width: 80% !important; /* Daha küçük ekranlarda formun genişliği */
+      margin-top: 12% !important;
+  }
+  .icerik-container h2 {
+    font-size: 14px;
+  }
+  .icerik-container p {
+     font-size: 12px;
+  }
+
+  
+}
+
+
+/* Arka planı olmayan buton stil */
+.transparent-button {
+background-color: transparent;
+color: white;
+border: 1px solid black;
+padding: 10px 20px;
+border-radius: 4px;
+cursor: pointer;
+text-decoration: none !important;}
+
+.transparent-button:hover {
+background-color: black;
+}
+.icerik-container h2{
+color: white;
+}
