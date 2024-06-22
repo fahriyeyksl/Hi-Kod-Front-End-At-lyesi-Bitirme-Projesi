@@ -114,7 +114,7 @@ nav {
 
 /* Navbar linklerinin rengi */
 .navbar-nav .nav-link {
-  color: white; /* Linklerin metin rengini buradan ayarlayabilirsiniz */
+  color: white; 
 }
 
 /* Navbar linklerinin hover rengi */
@@ -124,13 +124,13 @@ nav {
 }
 /* Navbar toggler icon rengi */
 .navbar-toggler-icon {
-  background-color: #343a40; /* Toggler ikonunun rengini buradan ayarlayabilirsiniz */
+  background-color: #343a40; 
 }
 
 /* Navbar brand logo boyutu */
 .navbar-brand img {
-  width: 100px; /* Logonun genişliğini buradan ayarlayabilirsiniz */
-  height: auto; /* Logonun yüksekliğini buradan ayarlayabilirsiniz */
+  width: 100px; /* Logonun genişliğini */
+  height: auto; /* Logonun yüksekliğini  */
 }
 
 
