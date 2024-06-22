@@ -10,8 +10,8 @@ body, html {
 }
 /* Navbar brand logo boyutu */
 .navbar-brand img {
-  width: 100px; /* Logonun genişliğini buradan ayarlayabilirsiniz */
-  height: auto; /* Logonun yüksekliğini buradan ayarlayabilirsiniz */
+  width: 100px; /* Logonun genişliğini  */
+  height: auto; /* Logonun yüksekliğini  */
 }
 
 #video-background {
@@ -170,9 +170,9 @@ margin-right: 3px; /* Logodan metin arasındaki boşluk */
 }
 
 .logo {
-max-width: 130px; /* Logo genişliği */
+max-width: 130px; 
 height: auto;
-opacity: 0.3; /* Başlangıçta görünmez olacak */
+opacity: 0.3; 
 transition: opacity 1s ease-in-out; /* Yavaş yavaş belirginleşme efekti */
 transform: rotate(270deg); 
 }
@@ -242,7 +242,7 @@ left: 0;
 transform: translate(-50%, -50%) rotate(30deg);
 width: 120%; /* Genişliği arttır */
 height: auto; /* Yüksekliği otomatik yap */
-z-index: -1; /* Yazıların üstünde olması için */
+z-index: -1; /* Yazıların üstünde olması sağla */
 }
 
 /* */
@@ -257,16 +257,16 @@ bottom: 0%;
 left: 50%;
 transform: translateX(-50%);
 width: 100%;
-height: 100%; /* Div'in yarısını kaplayacak şekilde */
+height: 100%; 
 z-index: -1;
 }
 .rotated-image3 {
 position: absolute;
 bottom: 0;
 top: 0;
-right: 10%; /* Sağa yaslamak için */
+right: 10%; 
 transform: translateX(50%);
-width: 100%; /* Div'in yarısını kaplayacak şekilde */
+width: 100%;
 height: 100%;
 z-index: -1;
 }
@@ -279,13 +279,13 @@ flex: 1; /* Metin kısmının genişliği esnek olacak */
 color: #fff;
 font-size: 20px;
 line-height: 1.6;
-width: 100%; /* Metin genişliği */
-transition: opacity 1s ease-in-out; /* Yavaş yavaş belirginleşme efekti */
+width: 100%; 
+transition: opacity 1s ease-in-out; 
 }
 
 .card-container-2:hover .logo,
 .card-container-2:hover .card2-text p {
-opacity: 1; /* Hover durumunda belirginleşme */
+opacity: 1; 
 }
 .sideTitle {
 writing-mode: vertical-rl;
@@ -314,12 +314,12 @@ font-size: 20px;
 }
 
 .general-info {
-width: 100%; /* İstediğiniz genişlik değeri */
-height: 100%; /* Otomatik yükseklik */
+width: 100%; 
+height: 100%; 
 }
 
 .general-text {
-width: calc(100% - 100px); /* Genel bilgi içeriğinin genişliği, başlık genişliği kadar azaltıldı */
+width: calc(100% - 100px);
 }
 
 .sideTitle {
@@ -328,14 +328,14 @@ width: 100px; /* Başlık genişliği */
 
 .rotated-image1,
 .rotated-image3 {
-max-width: 120%; /* Resimlerin maksimum genişliği */
-height: auto; /* Otomatik yükseklik */
+max-width: 120%; 
+height: auto; 
 }
 
 .card-container1 {
 display: flex;
 margin: 20px auto;
-max-width: 800px; /* Kartın maksimum genişliği */
+max-width: 800px; 
 }
 
 .card-content {
